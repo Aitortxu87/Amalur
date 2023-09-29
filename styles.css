@@ -177,4 +177,6 @@ nav {
 .text2:hover { 
     text-shadow: red -6px 0, cyan 6px 0;
 }
-  
+.greeting {
+    color: #609c77;
+}
