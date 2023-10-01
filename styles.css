@@ -14,10 +14,11 @@ body {
     list-style: none;
 }
 a {
-    color: aliceblue;
+    color: rgb(231, 236, 241);
     text-decoration:none;
 }
 .imagen{
+    flex: auto;
     width:50%; height:auto;
     flex: auto;
     padding: 5%;
@@ -25,7 +26,14 @@ a {
 }
 
 /*navbar*/
- 
+.logo {
+    display: inline-block;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+  }
+  
   header nav {
     float:inherit;
     background-color: rgba(3, 6, 2, 0.71);
@@ -46,9 +54,8 @@ a {
   nav a:hover {
     color: #1d4540;
   }
-
-
-/* Menu */
+  
+/* NAV Menu */
 
 #check {
     display: none;
@@ -62,8 +69,9 @@ a {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
+ }
 .texto1 {
+    flex: auto;
     background-color: rgba(130, 198, 137, 0.5);
     width: 250;
     background-attachment:fixed;
@@ -73,7 +81,11 @@ a {
     position:static;
     top: 50%;
     display: flex;
+    text-align: justify;
 }
+
+
+
   /*---------Galería------------*/
 
 .container.gallery-container {
@@ -163,6 +175,7 @@ nav {
     color: aliceblue;
 }
 .text1 {
+    text-align: justify;
     padding: 1%;
     letter-spacing: 6px;
     text-shadow: red 0 0, cyan 0 0;
