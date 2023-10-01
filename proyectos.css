@@ -1,4 +1,4 @@
-body{
+    body{
     background-image: url(img/Dream.jpg);
     }
     *{
@@ -110,4 +110,5 @@ background-color: rgba(0, 0, 0, 0.463);
 }
 main {
     background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
