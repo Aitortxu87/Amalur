@@ -1,11 +1,14 @@
     body{
     background-image: url(img/Dream.jpg);
     }
+
     *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex: auto;
     }
+
     #background {
     background-size: cover;
   width: 100%;
