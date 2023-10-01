@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reproductor de Música</h1>
+    
+    <audio id="musicPlayer"controls>
+        <source src="music/freebird.mp3" type="audio/mpeg">
+    </audio>
+
+    <ul>
+        <li><button onclick="playSong('music/freebird.mp3')">CRC - Free Bird</button></li>
+        <li><button onclick="playSong('music/lostonyou.mp3')">LP - Lost on you</button></li>
+        <li><button onclick="playSong('cmusic/sympathy.mp3')">Sympathy For The Devil</button></li>
+    </ul>
+
+    <script>
+        const musicPlayer = document.getElementById('musicPlayer');
+
+        function playSong(songSrc) {
+            musicPlayer.src = songSrc;
+            musicPlayer.play();
+        }
+    </script>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #5b4d13; /* Color de fondo suave */
+}
+
+h1 {
+    font-size: 24px;
+    color: #4CAF50; /* Color verde */
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388E3C; /* Cambia a un verde más oscuro al pasar el ratón */
+}
+
+audio {
+    margin-top: 20px;
+}
+
+/* Agregar animación de color */
+@keyframes colorAnimation {
+    0% { background-color: #228725; }
+    50% { background-color: #FF9800; } /* Cambia a un color naranja */
+    100% { background-color: #131513; }
+}
+
+/* Aplicar animación de color a los botones */
+button:nth-child(1):hover {
+    animation: colorAnimation 2s infinite;
+}
+
+button:nth-child(2):hover {
+    animation: colorAnimation 2s infinite 0.2s; /* Retraso de 0.2 segundos */
+}
+
+button:nth-child(3):hover {
+    animation: colorAnimation 2s infinite 0.4s; /* Retraso de 0.4 segundos */
+}
+    </style>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(45, 244, 94);
+    padding: 0%;
+    margin: auto;
+}
+.contenedor1 {
+    background-color: aqua;
+}
+p {
+    text-align: center;
+  }
+
+.contenedor2 {
+    width: 80%;
+    background-color: rgb(235, 14, 14);
+  }
+.hijo2{
+    margin: 0 auto;
+    background-color: rgb(110, 110, 241);
+ }
+ .contenedor3 {
+    
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+ }
+ .hijo3 {
+    background-color: blueviolet;
+ }
+ .contenedor4 {
+    position: relative;
+  }
+  
+  .hijo4 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* centrado vertical */
+    position: absolute;
+    top: 50%;
+  }

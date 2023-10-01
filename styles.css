@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1685207890865-46c55c4d51b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+    background-image: url('https://images.unsplash.com/photo-1573499931826-293a9722a62d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
     background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
@@ -28,7 +28,7 @@ a {
  
   header nav {
     float:inherit;
-    background-color: rgba(47, 65, 41, 0.4);
+    background-color: rgba(3, 6, 2, 0.71);
   }
   
   nav ul li {
@@ -77,8 +77,12 @@ a {
   /*---------Galería------------*/
 
 .container.gallery-container {
-      background-color: #609c77;
-      color: #050505;   
+      background-color: #24ef4d67;
+      color: #050505;  
+      padding: auto; 
+      width: auto;
+      margin-left: 50px;
+      margin-right: 50px;
       min-height: 50vh;
       border-radius: 500px;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
@@ -86,6 +90,7 @@ a {
   
   .gallery-container h1 {
       text-align: center;
+      padding: 5%;
       margin-top: 100px;
       font-family: 'Droid Sans', sans-serif;
       font-weight: bold;
@@ -180,3 +185,47 @@ nav {
 .greeting {
     color: #609c77;
 }
+.botoncito {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: rgba(76, 175, 79, 0.144); /* Color de fondo verde con transparencia */
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;display: inline-block;
+            border-radius: 5px; 
+            cursor: pointer;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;
+}
+.botoncito:hover{
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+}
+/*--Eggercicios--*/
+.contenedor-flex {
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    align-items: center; /* Alinea los elementos verticalmente en el centro (opcional) */
+}
+
+/* Opcional: Estilos adicionales para los botones */
+.contenedor-flex button {
+    margin: 15px; /* Espacio entre los botones */
+}
+.button {
+    color: azure;
+    background-color:#5995da;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5995da;       
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+ 
