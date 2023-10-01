@@ -9,22 +9,6 @@ body {
   font-family: 'Asap Condensed', sans-serif;
   color: white; 
 }
-
-.menu-container {
-    list-style: none;
-}
-a {
-    color: rgb(231, 236, 241);
-    text-decoration:none;
-}
-.imagen{
-    flex: auto;
-    width:50%; height:auto;
-    flex: auto;
-    padding: 5%;
-
-}
-
 /*navbar*/
 .logo {
     display: inline-block;
@@ -85,11 +69,61 @@ a {
 }
 
 
-
+nav {
+    color: rgb(196, 164, 125);
+}
+  
+  /* MEDIA QUERIES */
+  
+  /* Estilos para pantallas más pequeñas (hasta 768px) */
+  @media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    
+  
+    .checkbtn {
+      display: block;
+    }
+  
+    .navbar {
+      height: 0vh;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: #0b170e83;
+      text-align: center;
+  
+      transition: all 0.5s;
+      overflow: hidden;
+    }
+  
+    .navbar ul.menu {
+      float: none;
+      display: block;
+      width: 174px;
+      margin: 0 auto;
+      opacity: 0;
+    }
+  
+    .navbar ul.menu li a:hover {
+      color: #eac064;
+    }
+    /* ACTIVE */
+    .navbar.active {
+      height: 100vh;
+    }
+  
+    .navbar.active ul.menu {
+      opacity: 2;
+    }
+  }
+  
+  
+  
   /*---------Galería------------*/
 
 .container.gallery-container {
-      background-color: #24ef4d67;
+      background-color: #64cc7979;
       color: #050505;  
       padding: auto; 
       width: auto;
@@ -166,24 +200,20 @@ a {
 .elemento-centrado {
     margin: auto; /* Centra el elemento horizontalmente */
 }
-
-nav {
-    color: rgb(196, 164, 125);
-}
-
 .menu {
     color: aliceblue;
 }
 .text1 {
+    margin: 7%;
     text-align: justify;
     padding: 1%;
     letter-spacing: 6px;
-    text-shadow: red 0 0, cyan 0 0;
+    text-shadow: rgb(29, 228, 46) 0 0, rgb(196, 100, 16) 0 0;
     transition: text-shadow 200ms ease-in-out;
  
 }
 .text1:hover { 
-    text-shadow: red -6px 0, cyan 6px 0;
+    text-shadow: rgb(25, 233, 10) -6px 0, rgb(244, 232, 15) 6px 0;
 }
 .text2 {
     padding: 5%;

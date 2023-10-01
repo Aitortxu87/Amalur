@@ -232,7 +232,7 @@ html {
 }
 
 body {
-	margin: 0;
+	margin: 100px;
     border-color: #060505;
 	font-family: 'Helvetica-Light', Arial, Meiryo, sans-serif;
 	line-height: 1.7;	
