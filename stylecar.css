@@ -1,146 +1,58 @@
 .aspect-square {
 	aspect-ratio: 1/1;
 }
-
 .aspect-16-9 {
 	aspect-ratio: 16/9;
 }
-
 .aspect-4-3 {
 	aspect-ratio: 4/3;
 }
-
-/* ---SEC---*/
-
 .adsense300x250 {
 	width: 300px;
 	height: 250px;
 	background-color: #EEE;
 }
-
 .adsense336x280 {
 	width: 336px;
 	height: 280px;
 	background-color: #EEE;
 }
-
 .adsense728x90 {
 	width: 728px;
 	height: 90px;
 	background-color: #EEE;
 }
-
 .adsense160x600 {
 	width: 160px;
 	height: 600px;
 	background-color: #EEE
 }
-
 .adsense320x50 {
 	width: 320px;
 	height: 50px;
 	background-color: #EEE
 }
-
 .adsense468x60 {
 	width: 468px;
 	height: 60px;
 	background-color: #0e0d0d
 }
-
 .adsense_horizontal {
 	width: 728px;
 	height: 90px;
 
 	margin: 30px auto;
 }
-
 @media (max-width: 750px) {
 	.adsense_horizontal {
 		width: 320px;
 		height: 50px;
 	}
 }
-
-/* ---SEC---*/
-
-header {
-	padding: 20px 0;
-    background-color: #080808;
-	overflow: hidden;
-	height: 40px;
-    color: #d3cbcb;
-}
-
-	header .logo {
-		float: left;
-
-		width: 320px;
-		height: 47px;
-
-		background-image: url(/images/logo.png);
-		background-size: 100%;
-	}
-
-header nav {
-	float: right;
-}
-
-	header nav ul {
-		margin: 0;
-		padding: 0;
-		float: left;
-	}
-
-	header nav li {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		display: inline-block;
-
-		border-right: 1px solid #d5cfcf;
-	}
-
-	header nav li:first-child {
-		border-left: 1px solid #d9d5d5;
-	}
-
-	header nav a {
-		display: block;
-		padding: 8px 15px;
-
-		color: #d2d1d1;
-		text-decoration: none;
-		font-size: 80%;
-	}
-
-	header nav a:hover {
-		background-color: #ebedeb;
-	}
-
-@media (max-width: 1050px) {
-	header {
-		margin-bottom: 0;
-	}
-
-	header .logo {
-		width: calc(320px * 0.8);
-		height: calc(47px * 0.8);
-	}
-
-	header nav {
-		display: none;
-        color: #CCC;
-	}
-}
-
-/* ---SEC---*/
-
 #mobile-menu, #mobile-menu-button {
 	display: none;
     background-color: #333;
 }
-
 @media (max-width: 1050px) {
 	#mobile-menu, #mobile-menu-button {
 		display: block;
@@ -227,18 +139,17 @@ header nav {
 
 /* ---SEC---*/
 
-html {
-	overflow-y: scroll;
-}
+
 
 body {
-	margin: 100px;
-    border-color: #060505;
+	margin: 10px;
+    border-color: #06050500;
 	font-family: 'Helvetica-Light', Arial, Meiryo, sans-serif;
 	line-height: 1.7;	
     -webkit-text-size-adjust: none;
-	background-color: #1010105b;
-	color: #333;
+	background-color: #0c000078;
+	color: #050505;
+	
 }
 
 h1, h2 {
@@ -425,15 +336,5 @@ tr:nth-child(odd)
 		-webkit-overflow-scrolling:touch;
 	}
 }
-.reproductor {
-    padding: 1%;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-}
-#musicPlayer {
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    
-}
+
+
