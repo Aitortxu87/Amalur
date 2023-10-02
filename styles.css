@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1573499931826-293a9722a62d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+    background-image: url('https://images.unsplash.com/photo-1695576832781-79d4d6563ee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80');
     background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
@@ -12,7 +12,7 @@ body {
 /*navbar*/
 
   header nav {
-    float:inherit;
+    
     background-color: rgba(3, 6, 2, 0.71);
     text-align: center;
   }
@@ -38,41 +38,47 @@ body {
 
 #check {
     display: none;
+    background-color: #050505
 }
 
 .checkbtn {
     font-size: 25px;
-    color: white;
+    color: rgb(93, 159, 106);
     float: right;
     line-height: 80px;  
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    
  }
  
 
 
 nav {
-    color: rgb(196, 164, 125);
+    color: rgb(185, 123, 49);
 }
   
   /* MEDIA QUERIES */
   
   /* Estilos para pantallas más pequeñas (hasta 768px) */
   @media (max-width: 768px) {
+    .nav {
+      float:inherit;
+      background-color: rgba(3, 6, 2, 0.71);
+      text-align: center;
+    }
     .checkbtn {
-      display: block;
+      display: flex;  
     }
       .navbar {
       height: 0vh;
-      position: absolute;
-      top: 80px;
+      position:relative;
+      top: 8px;
       left: 0;
       width: 100%;
-      background: #0b170e83;
+      background: #0b0b0bde;
       text-align: center;
-  
-      transition: all 0.5s;
+       transition: all 0.5s;
       overflow: hidden;
     }
   
@@ -81,35 +87,41 @@ nav {
       display: block;
       width: 174px;
       margin: 0 auto;
+      margin-top: 0;
       opacity: 0;
+      
+      
     }
   
     .navbar ul.menu li a:hover {
-      color: #eac064;
+      color: #090907;
     }
     /* ACTIVE */
     .navbar.active {
       height: 100vh;
+      background-color: #0d0c0c62;
+      
     }
   
     .navbar.active ul.menu {
-      opacity: 2;
+      opacity: 50%;
     }
     .imagen {
-    
-      margin-top: 0px;
+      max-width: fit-content;
+      margin-top: 50px;
+      max-height: fit-content;
+      margin-left: 4rem !important ;
     }
     .instagram {
+      max-width: fit-content;
 
       
-      padding: 50%;
+      
       margin-top: 50px;
      
     }
 
   }
-  
-  
   
   /*---------Galería------------*/
 
@@ -193,8 +205,8 @@ nav {
   display: flex;
   flex-wrap:wrap;
   align-items: center;
-  margin: 15%;
-  padding: -10px;
+  margin-top: 15%;
+  padding: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,8 +217,9 @@ nav {
     float: inline-start;
     padding: auto; 
     width: auto;
-    min-height: 50vh;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    min-height: 15vh;
+    max-height: fit-content;
+    
     display: flex;
   }
 
@@ -219,44 +232,34 @@ nav {
     content: 10px;
     display: flex;
     background-color: rgba(130, 198, 137, 0.5);
+    text-size-adjust:inherit;
+    font-size: 10px;
 }
-.text2 {
-    padding: 5%;
-    letter-spacing: 6px;
-    text-shadow: red 0 0, cyan 0 0;
-    transition: text-shadow 200ms ease-in-out;
- 
-}
-.text2:hover { 
-    text-shadow: red -6px 0, cyan 6px 0;
-}
-.greeting {
-    color: #609c77;
-}
+
 
 /*BOTONES FOOTER*/
-
 .botoncito {
-            display: inline-block;
+           margin: auto;
             padding: 15px 30px;
             background-color: rgba(76, 175, 79, 0.144);
             color: white;
             font-size: 18px;
             text-align: center;
-            border: none;
+            border: black solid transparent;
             border-radius: 5px;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;display: inline-block;
-            border-radius: 5px; 
-            cursor: pointer;
+            border-radius: 30px; 
             display: flex;
             justify-content: center;
             align-items: center;
+            
 }
 .botoncito:hover{
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
+
 /*--Eggercicios--*/
 .contenedor-flex {
     display: flex;
@@ -267,6 +270,9 @@ nav {
 /* Opcional: Estilos adicionales para los botones */
 .contenedor-flex button {
     margin: 15px; /* Espacio entre los botones */
+    background-color: #097afb92;
+    color: #fff;
+    border-radius: 10ox;
 }
 .button {
     color: azure;
@@ -274,8 +280,8 @@ nav {
     font-weight: bold;
     padding: 20px;
     text-align: center;
-    border: 2px solid #5995da;       
-    border-radius: 5px; 
+    border: 2px solid #0165d6;       
+    border-radius: 11px; 
     cursor: pointer;
 }
 
