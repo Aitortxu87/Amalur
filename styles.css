@@ -43,7 +43,8 @@ body {
 
 .checkbtn {
     font-size: 25px;
-    color: rgb(93, 159, 106);
+    color: rgb(3, 33, 9);
+    border: #0165d6;
     float: right;
     line-height: 80px;  
     margin-right: 40px;
@@ -51,17 +52,26 @@ body {
     display: none;
     
  }
- 
-
-
-nav {
-    color: rgb(185, 123, 49);
-}
-  
-  /* MEDIA QUERIES */
+   /* MEDIA QUERIES */
   
   /* Estilos para pantallas más pequeñas (hasta 768px) */
   @media (max-width: 768px) {
+    .checkbtn {
+      font-size: 25px;
+      color: rgb(236, 244, 7);
+      padding: 10px;
+      
+      min-width: 350px;
+      background-color: #0165d6;
+      background:#050505bc;
+      border-color: #0377fc;
+      float: right;
+      line-height: 0;  
+      margin-right: 0;
+      cursor: pointer;
+      display: flex;
+      flex: auto;
+    }
     .nav {
       float:inherit;
       background-color: rgba(3, 6, 2, 0.71);
@@ -76,7 +86,7 @@ nav {
       top: 8px;
       left: 0;
       width: 100%;
-      background: #0b0b0bde;
+      background-color: #0b0b0bde;
       text-align: center;
        transition: all 0.5s;
       overflow: hidden;
@@ -119,8 +129,9 @@ nav {
       
       margin-top: 50px;
      
+    
     }
-
+    
   }
   
   /*---------Galería------------*/
