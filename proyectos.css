@@ -1,16 +1,17 @@
-    body{
-    background-image: url(img/Dream.jpg);
-    }
+  body{
+  background-image: url(img/Dream.jpg);
+    
+  }
 
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    flex: auto;
-    }
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex: auto;
+  }
 
-    #background {
-    background-size: cover;
+  #background {
+  background-size: cover;
   width: 100%;
   height: 100%;
   position: center;
@@ -113,4 +114,7 @@ background-color: rgba(0, 0, 0, 0.463);
 main {
     background-color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+h3{
+  text-align: center;
 }
